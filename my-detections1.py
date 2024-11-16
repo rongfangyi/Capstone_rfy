@@ -5,7 +5,7 @@ import jetson.utils
 
 
 net = jetson.inference.detectNet("ssd-mobilenet-v2", threshold=0.5)
-camera = jetson.utils.videoSource("/home/nvidia/jetson-inference/data/images/bird_1.jpg")
+camera = jetson.utils.videoSource("/home/nvidia/jetson-inference/data/images/bird_0.jpg")
 display = jetson.utils.videoOutput("display://0")
 while display.IsStreaming():
     img = camera.Capture()
